@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+
+    --green: rgb(164 255 175);
+    --disabled-green: rgb(64, 105, 69);
+    --black: #090A0C;
+    --secondary-black: rgb(24 23 31);
+    --orange: rgb(248 205 102);
+    --box-gray: rgb(36 35 43);
+    --title-gray: rgb(103 101 115);
+    --text-color: rgb(203 203 208);
+    --password-color: #FFF;
+    --strength-gray: rgb(122 120 135);
+    --thumb: rgb(230 229 234);
+
+    --box-paddings: 1.2rem 1rem;
+}
+
+body {
+    background: linear-gradient(rgb(20 19 27), rgb(9 8 13));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+form {
+    width: 90%;
+}
+
+#title {
+    font-size: 1.6rem;
+    color: var(--title-gray);
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+#copyText {
+    opacity: 0;
+
+    font-size: 1.6rem;
+    color: #fff;
+
+    top: 5%;
+    position: absolute;
+
+    background-color: var(--box-gray);
+
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+
+    transition: .1s;
+}
+
+#icon-copy:hover,
+input:hover,
+button:hover,
+label:hover {
+    cursor: pointer;
+}
+
+
+/*===================PASSWORD BOX============================*/
+#password-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--box-paddings);
+    margin-bottom: 2rem;
+
+    background-color: var(--box-gray);
+
+}
+
+#span-password {
+    display: block;
+    width: 90%;
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--password-color);
+
+    position: relative;
+}
+
+
+#icon-copy {
+    filter: invert(76%) sepia(60%) saturate(407%) hue-rotate(84deg) brightness(101%) contrast(98%);
+}
+
+
+
+/*===================OPTIONS BOX GENERAL============================*/
+
+#options-box {
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+    background-color: var(--box-gray);
+
+    padding: var(--box-paddings);
+
+    word-spacing: .3rem;
+}
+
+
+
+
+/*===================OPTIONS BOX LENGTH============================*/
+
+#length-box {
+    margin-bottom: 2rem;
+}
+
+#length-box div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+#current-length {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+
+
+
+
+
+output {
+    display: none;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 1.5rem;
+    width: 100%;
+    height: 7px;
+    background: var(--secondary-black);
+    border-radius: 5px;
+    background-image: linear-gradient(var(--green), var(--green));
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--thumb);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--thumb);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--thumb);
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: var(--thumb);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: var(--thumb);
+}
+
+input[type="range"]::-ms-thumb:hover {
+    background: --var(--thumb);
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+
+}
+
+input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+
+
+}
+
+input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+
+}
+
+
+/*===================OPTIONS BOX CHECKBOXES============================*/
+
+.check-containers {
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+label {
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+
+    /*remove initial style*/
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0);
+
+
+    color: currentColor;
+
+    margin: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+
+    border: .15rem solid currentColor;
+
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+/*::before = checked simbol*/
+input[type="checkbox"]::before {
+    content: "";
+
+    width: 1rem;
+    height: 1rem;
+
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+    background-color: var(--black);
+}
+
+
+
+/*===================OPTIONS BOX STRENGTH BOX============================*/
+
+
+#strength-box {
+    background-color: var(--secondary-black);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--box-paddings);
+    margin-bottom: 1.5rem;
+
+    text-transform: uppercase;
+
+    
+}
+
+#strength-box>span {
+    color: var(--title-gray);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+#strength-box>div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-weight: 500;
+}
+
+#strength-bar-box {
+    display: flex;
+    gap: .5rem;
+
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.strength-bar {
+    height: 2.2rem;
+    width: .9rem;
+
+    border: 1px solid currentColor;
+
+    transition: .3s;
+}
+
+
+/*=================== BUTTON ========================*/
+
+button {
+    background-color: var(--green);
+    border: none;
+
+    box-shadow: var(--green) 0px 0px 15px 0px;
+
+    padding-block: 1.7rem;
+    margin-inline: auto;
+    width: 100%;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    transition: .3s;
+}
+
+button:disabled {
+    color: var(--black);
+    box-shadow: none;
+    background-color: var(--disabled-green);
+}
+
+
+/*=================== RESPONSIVE ========================*/
+@media (min-width: 500px) {
+
+    form {
+        max-width: 40rem;
+    }
+
+    #span-password {
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    form {
+        max-width: 45rem;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <script src="script.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <span id="copyText">Password copied to clipboard</span>
+    <form>
+        <h6 id="title">Password Generator</h6>
+
+        <div id="password-box">
+            <span id="span-password">&nbsp;</span>
+            <img src="assets/icon-copy.svg" alt="copy" width="16" height="16" id="icon-copy" title="Copy to clipboard">
+        </div>
+
+        <div id="options-box">
+
+            <div id="length-box">
+                <div>
+                    <span>Character Length</span>
+                    <span id="current-length">4</span>
+                </div>
+                <input type="range" min="4" max="15" value="12">
+                <output id="rangevalue">70</output>
+            </div>
+
+            <div class="check-containers">
+                <input type="checkbox" id="uppercase" value="1">
+                <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+
+            <div class="check-containers">
+                <input type="checkbox" id="lowercase" value="3">
+                <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+
+            <div class="check-containers">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Include Numbers</label>
+            </div>
+
+            <div class="check-containers">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Include Symbols</label>
+            </div>
+ 
+            <div id="strength-box">
+                <span>STRENGTH</span>
+                <div>
+                    <span id="current-strength">WEAK</span>
+                    <div id="strength-bar-box">
+                        <div class="strength-bar" id="bar1"></div>
+                        <div class="strength-bar" id="bar2"></div>
+                        <div class="strength-bar" id="bar3"></div>
+                        <div class="strength-bar" id="bar4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" disabled>
+                <span>GENERATE</span> 
+                <img src="assets/icon-arrow.png" alt="generate password" width="16" height="16">
+            </button>
+
+        </div>
+    </form>
+</body>
+
+</html>

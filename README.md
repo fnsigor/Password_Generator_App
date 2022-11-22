@@ -7,6 +7,8 @@
 <img src="https://user-images.githubusercontent.com/86209425/199868618-77ddba4b-e0d6-4e5a-a011-6ceb56fa5c1b.png" width="80%" >
 <div/>
 
+<br><br>
+  
 <!-- PROJECT CONTENT -->
 <div align="left">
 
@@ -17,7 +19,7 @@
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
 
 
-<br>
+<br><br>
 
 ## Features
 The main features of the application are:
@@ -29,8 +31,7 @@ The main features of the application are:
 
 ## Getting started
 
-* Acess the link
-  <a href="https://fnsigor.github.io/Password_Generator_App/">Password Generator App<a/>
+* <a href="https://fnsigor.github.io/Password_Generator_App/">Click this link<a/>
 
 <br>
 
@@ -40,8 +41,15 @@ The main features of the application are:
   
 <br>
 
- ## Services Used
-
+## Services Used
 * Github
+    
+<br>
 
+## Authors
+<a href="https://github.com/fnsigor">Igor Fernandes<a/>
+    
+<br>                                                   
+                                                      
 
+<div align="center"><i>Thanks to visiting me and good coding!<i/><div/>

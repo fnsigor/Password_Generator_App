@@ -49,7 +49,9 @@ The main features of the application are:
 ## Authors
 <a href="https://github.com/fnsigor">Igor Fernandes<a/>
     
-<br>                                                   
-                                                      
+<br>
+  
+<div/> 
+<!--END CONTENT-->                                                       
 
 <div align="center"><i>Thanks to visiting me and good coding!<i/><div/>
